@@ -62,7 +62,7 @@ async function searchAnimePage(query) {
 
     if (!result) {
 
-        showToast("Search failed.");
+        showToast("Server is busy. Please try again in a few seconds.");
 
         return;
 

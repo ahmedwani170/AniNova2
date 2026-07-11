@@ -38,8 +38,9 @@ async function apiRequest(endpoint, retries = 3) {
     }
 
     try {
-
-        const response = await fetch(url);
+const response = await fetch(url, {
+    cache: "no-store"
+});
 
         if (response.status === 429 && retries > 0) {
 
@@ -85,16 +86,19 @@ async function apiRequest(endpoint, retries = 3) {
 
     catch (error) {
 
-        console.error(
+    console.error("API Error:", error);
 
-            "API Error:",
+    if (retries > 0) {
 
-            error
+        console.log(`Retrying... (${retries})`);
 
-        );
+        await new Promise(resolve => setTimeout(resolve, 1500));
 
-        return null;
+        return apiRequest(endpoint, retries - 1);
 
+    }
+
+    return null;
     }
 
 }
