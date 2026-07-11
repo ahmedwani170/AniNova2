@@ -301,12 +301,20 @@
     }
 
 }
-@media (max-width:768px){
+
     /* ===============================
    Mobile Header v2.2
 ================================ */
 
+/*=====================================
+   AniNova Mobile v2.2
+======================================*/
+
 @media (max-width:768px){
+
+    .container{
+        width:94%;
+    }
 
     .header .container{
         height:70px;
@@ -314,28 +322,22 @@
     }
 
     .logo{
+        font-size:1.5rem;
+    }
+
+    .section{
+        padding:40px 0;
+    }
+
+    .section-header{
+        margin-bottom:18px;
+    }
+
+    .section-header h2{
         font-size:1.4rem;
     }
 
-    .nav{
-        display:none;
-    }
-
-    .search-container{
-        display:none;
-    }
-
-    .header-buttons{
-        gap:8px;
-    }
-
-    .header-buttons button{
-        width:42px;
-        height:42px;
-    }
-
 }
-
     .favorites-grid{
 
         grid-template-columns:repeat(2,1fr);
@@ -343,6 +345,130 @@
         gap:18px;
 
     }
+
+@media (max-width:768px){
+
+#hero{
+
+    min-height:75vh;
+    padding:100px 20px 50px;
+    text-align:center;
+    justify-content:center;
+
+}
+
+.hero-content{
+
+    max-width:100%;
+
+}
+
+.hero-content h1{
+
+    font-size:2rem;
+    line-height:1.2;
+
+}
+
+.hero-content p{
+
+    font-size:.95rem;
+    margin:18px auto;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-buttons button{
+
+    padding:12px 22px;
+    font-size:.9rem;
+
+}
+
+}
+@media (max-width:768px){
+
+.anime-row{
+
+    gap:14px;
+
+}
+
+.anime-card{
+
+    min-width:150px;
+    max-width:150px;
+    border-radius:14px;
+
+}
+
+.card-content{
+
+    padding:12px;
+
+}
+
+.card-title{
+
+    font-size:.9rem;
+
+}
+
+.card-info{
+
+    font-size:.75rem;
+
+}
+
+.card-actions{
+
+    flex-direction:column;
+
+}
+
+.card-actions button{
+
+    height:36px;
+    font-size:.8rem;
+
+}
+
+}
+@media (max-width:768px){
+
+.genre-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.genre-btn{
+
+    height:48px;
+    font-size:.85rem;
+
+}
+
+}
+@media (max-width:768px){
+
+.footer-grid{
+
+    gap:25px;
+    text-align:center;
+
+}
+
+.social-icons{
+
+    justify-content:center;
+
+}
 
 }
 
