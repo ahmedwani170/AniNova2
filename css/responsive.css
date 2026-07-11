@@ -634,3 +634,136 @@
         font-size:1.5rem;
     }
 }
+/* ==========================================
+   AniNova Mobile Premium Cards
+========================================== */
+
+@media (max-width:768px){
+
+.anime-card{
+
+    min-width:155px;
+    max-width:155px;
+    border-radius:18px;
+    overflow:hidden;
+    background:#171b28;
+    border:1px solid rgba(255,255,255,.05);
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.card-image{
+
+    aspect-ratio:2/3;
+
+}
+
+.card-content{
+
+    padding:12px;
+
+}
+
+.card-title{
+
+    font-size:.9rem;
+    min-height:42px;
+
+}
+
+.card-info{
+
+    font-size:.75rem;
+    margin-bottom:10px;
+
+}
+
+.card-actions{
+
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+
+}
+
+.watch-btn,
+.favorite-btn{
+
+    height:36px;
+    border-radius:10px;
+    font-size:.8rem;
+
+}
+
+}
+@media (max-width:768px){
+
+.section-header{
+
+    margin-bottom:16px;
+
+}
+
+.section-header h2{
+
+    font-size:1.35rem;
+    font-weight:700;
+
+}
+
+}
+@media (max-width:768px){
+
+#hero{
+
+    min-height:70vh;
+    padding:90px 20px 45px;
+
+}
+
+.hero-content h1{
+
+    font-size:2rem;
+
+}
+
+.hero-content p{
+
+    font-size:.95rem;
+
+}
+
+.hero-buttons{
+
+    gap:10px;
+
+}
+
+.hero-buttons button{
+
+    flex:1;
+
+}
+
+}
+@media (max-width:768px){
+
+.anime-row{
+
+    gap:14px;
+    padding-bottom:18px;
+    scroll-padding-left:15px;
+
+}
+
+}
+@media (max-width:768px){
+
+.hero-dot{
+
+    width:10px;
+    height:10px;
+
+}
+
+}
