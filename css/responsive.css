@@ -1,0 +1,431 @@
+/* ==========================================================
+   AniNova v2.1
+   Responsive Styles
+========================================================== */
+
+
+/* ==========================================================
+   LARGE LAPTOPS
+========================================================== */
+
+@media (max-width:1400px){
+
+    .container{
+
+        width:95%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   LAPTOPS
+========================================================== */
+
+@media (max-width:1200px){
+
+    h1{
+
+        font-size:3.3rem;
+
+    }
+
+    .search-container{
+
+        width:280px;
+
+    }
+
+    .anime-card{
+
+        min-width:200px;
+
+        max-width:200px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLETS
+========================================================== */
+
+@media (max-width:992px){
+
+    .nav{
+
+        display:none;
+
+    }
+
+    #menuBtn{
+
+        display:flex;
+
+    }
+
+    .search-container{
+
+        width:220px;
+
+    }
+
+    #hero{
+
+        padding:120px 5%;
+
+    }
+
+    .hero-content{
+
+        max-width:100%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero-content p{
+
+        font-size:1rem;
+
+    }
+
+    .section{
+
+        padding:60px 0;
+
+    }
+
+    .section-header{
+
+        flex-wrap:wrap;
+
+        gap:12px;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/* ==========================================================
+   LARGE PHONES
+========================================================== */
+
+@media (max-width:768px){
+
+    h1{
+
+        font-size:2.5rem;
+
+    }
+
+    h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .header .container{
+
+        height:75px;
+
+    }
+
+    .search-container{
+
+        display:none;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .hero-buttons button{
+
+        width:220px;
+
+    }
+
+    .anime-card{
+
+        min-width:170px;
+
+        max-width:170px;
+
+    }
+
+    .card-content{
+
+        padding:14px;
+
+    }
+
+    .section-header h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .newsletter .container{
+
+        padding:40px 25px;
+
+    }
+
+    .stats-section .container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL PHONES
+========================================================== */
+
+@media (max-width:576px){
+
+    .logo{
+
+        font-size:1.5rem;
+
+    }
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    h2{
+
+        font-size:1.4rem;
+
+    }
+
+    p{
+
+        font-size:.95rem;
+
+    }
+
+    #hero{
+
+        min-height:85vh;
+
+        padding:100px 20px 50px;
+
+    }
+
+    .hero-tag{
+
+        font-size:.8rem;
+
+    }
+
+    .hero-buttons{
+
+        width:100%;
+
+    }
+
+    .hero-buttons button{
+
+        width:100%;
+
+    }
+
+    .anime-card{
+
+        min-width:150px;
+
+        max-width:150px;
+
+    }
+
+    .genre-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .social-icons{
+
+        justify-content:center;
+
+    }
+
+    .stats-section .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #backToTop{
+
+        width:48px;
+
+        height:48px;
+
+        right:15px;
+
+        bottom:15px;
+
+    }
+
+}
+@media (max-width:768px){
+
+    .favorites-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:18px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .favorites-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+@media (max-width:768px){
+
+    .details-grid{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .poster-section img{
+
+        max-width:260px;
+
+        margin:auto;
+
+    }
+
+    #characterContainer{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    #recommendationContainer{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    #characterContainer,
+
+    #recommendationContainer{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+@media (max-width:768px){
+
+    .search-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .search-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+@media(max-width:900px){
+
+.details-grid{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.poster-section{
+
+    max-width:260px;
+
+    margin:auto;
+
+}
+
+.details-content h1{
+
+    font-size:2rem;
+
+}
+
+.details-buttons{
+
+    justify-content:center;
+
+}
+
+.details-hero{
+
+    min-height:auto;
+
+}
+
+.details-overlay{
+
+    min-height:auto;
+
+    padding:110px 20px 60px;
+
+}
+
+}

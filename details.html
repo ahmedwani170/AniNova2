@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AniNova | Anime Details</title>
+<meta name="description" content="AniNova - Discover, Watch and Track Anime">
+
+<meta name="theme-color" content="#7C3AED">
+
+<meta property="og:title" content="AniNova">
+
+<meta property="og:description" content="Modern Anime Discovery Platform">
+
+<meta property="og:type" content="website">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div id="loader">
+
+    <div class="spinner"></div>
+
+    <h2>Ani<span>Nova</span></h2>
+
+</div>
+
+<header class="header">
+
+    <div class="container">
+
+        <a href="index.html" class="logo">
+
+            Ani<span>Nova</span>
+
+        </a>
+
+        <nav class="nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="favorites.html">Favorites</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+<section id="detailsHero" class="details-hero">
+
+    <div class="details-overlay">
+
+        <div class="container details-grid">
+
+            <div class="poster-section">
+
+                <img
+
+                    id="animePoster"
+
+                    src=""
+
+                    alt="Anime Poster">
+
+            </div>
+
+            <div class="details-content">
+
+                <h1 id="animeTitle">
+
+                    Loading...
+
+                </h1>
+
+                <div id="animeMeta"
+                     class="anime-meta">
+
+                </div>
+
+                <div class="details-buttons">
+
+                    <button
+                        id="favoriteBtn"
+                        class="primary-btn">
+
+                        ❤️ Favorite
+
+                    </button>
+
+                    <button
+                        id="watchlistBtn"
+                        class="secondary-btn">
+
+                        📺 Watchlist
+
+                    </button>
+
+                    <button
+                        id="trailerBtn"
+                        class="accent-btn">
+
+                        ▶ Trailer
+
+                    </button>
+
+                </div>
+
+                <p id="animeSynopsis">
+
+                    Loading synopsis...
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2>Information</h2>
+
+<div id="animeInfo"
+     class="info-grid">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2>Characters</h2>
+
+<div id="characterContainer"
+     class="anime-row">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2>Recommendations</h2>
+
+<div id="recommendationContainer"
+     class="anime-row">
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="js/storage.js"></script>
+
+<script src="js/utils.js"></script>
+
+<script src="js/ui.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/details.js"></script>
+
+</body>
+
+</html>

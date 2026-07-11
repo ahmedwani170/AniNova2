@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Search Anime | AniNova</title>
+    <meta name="description" content="AniNova - Discover, Watch and Track Anime">
+
+<meta name="theme-color" content="#7C3AED">
+
+<meta property="og:title" content="AniNova">
+
+<meta property="og:description" content="Modern Anime Discovery Platform">
+
+<meta property="og:type" content="website">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div id="loader">
+
+    <div class="spinner"></div>
+
+    <h2>Ani<span>Nova</span></h2>
+
+</div>
+
+<header class="header">
+
+    <div class="container">
+
+        <a href="index.html"
+           class="logo">
+
+            Ani<span>Nova</span>
+
+        </a>
+
+        <nav class="nav">
+
+            <a href="index.html">
+
+                Home
+
+            </a>
+
+            <a href="search.html"
+               class="active">
+
+                Discover
+
+            </a>
+
+            <a href="favorites.html">
+
+                Favorites
+
+            </a>
+
+        </nav>
+
+        <div class="search-container">
+
+            <i class="fas fa-search"></i>
+
+            <input
+
+                id="searchPageInput"
+
+                type="text"
+
+                placeholder="Search any anime...">
+
+        </div>
+
+    </div>
+
+</header>
+
+<main
+style="padding-top:120px;">
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-header">
+
+<h2>
+
+Search Anime
+
+</h2>
+
+</div>
+
+<div class="genre-grid">
+
+<select id="genreFilter">
+
+<option value="">
+
+All Genres
+
+</option>
+
+</select>
+
+<select id="sortFilter">
+
+<option value="">
+
+Default
+
+</option>
+
+<option value="score">
+
+Highest Rated
+
+</option>
+
+<option value="title">
+
+Title A-Z
+
+</option>
+
+<option value="year">
+
+Newest
+
+</option>
+
+</select>
+
+</div>
+
+<div
+id="searchResults"
+class="search-grid"
+style="flex-wrap:wrap;overflow:visible;">
+
+</div>
+
+<div
+id="pagination"
+class="text-center mt-4">
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="js/storage.js"></script>
+
+<script src="js/utils.js"></script>
+
+<script src="js/ui.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/search.js"></script>
+
+</body>
+
+</html>

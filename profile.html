@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile | AniNova</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+Ani<span>Nova</span>
+</a>
+
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="favorites.html">Favorites</a>
+<a href="watchlist.html">Watchlist</a>
+<a href="profile.html" class="active">Profile</a>
+</nav>
+
+</div>
+
+</header>
+
+<main style="padding-top:120px;">
+
+<section class="section">
+
+<div class="container">
+
+    <div class="profile-card">
+
+        <div class="profile-avatar">
+
+            <i class="fas fa-user-circle"></i>
+
+        </div>
+
+        <h1>Welcome to AniNova</h1>
+
+        <p>Your personal anime dashboard.</p>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+    <div class="profile-stats">
+
+        <div class="stat-box">
+
+            <i class="fas fa-heart"></i>
+
+            <h2 id="profileFavorites">0</h2>
+
+            <p>Favorites</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <i class="fas fa-bookmark"></i>
+
+            <h2 id="profileWatchlist">0</h2>
+
+            <p>Watchlist</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <i class="fas fa-history"></i>
+
+            <h2 id="profileRecent">0</h2>
+
+            <p>Recently Viewed</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <i class="fas fa-tv"></i>
+
+            <h2 id="profileContinue">0</h2>
+
+            <p>Continue Watching</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2>Quick Actions</h2>
+
+<div class="profile-actions">
+
+<button onclick="location.href='favorites.html'">
+
+❤️ My Favorites
+
+</button>
+
+<button onclick="location.href='watchlist.html'">
+
+📺 My Watchlist
+
+</button>
+
+<button onclick="location.href='search.html'">
+
+🔍 Discover Anime
+
+</button>
+
+<button id="themeToggle">
+
+🌙 Toggle Theme
+
+</button>
+
+</div>
+
+</div>
+<script src="js/profile.js"></script>
+</section>
+
+</main>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>

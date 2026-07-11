@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Watchlist | AniNova</title>
+<meta name="description" content="AniNova - Discover, Watch and Track Anime">
+
+<meta name="theme-color" content="#7C3AED">
+
+<meta property="og:title" content="AniNova">
+
+<meta property="og:description" content="Modern Anime Discovery Platform">
+
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+</div>
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+Ani<span>Nova</span>
+
+</a>
+
+<nav class="nav">
+
+<a href="index.html">Home</a>
+
+<a href="favorites.html">Favorites</a>
+
+<a href="watchlist.html" class="active">
+
+Watchlist
+
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main class="section">
+
+<div class="container">
+
+<h1>📺 My Watchlist</h1>
+
+<input
+
+id="watchlistSearch"
+
+type="text"
+
+placeholder="Search watchlist...">
+
+<br><br>
+
+<select id="watchlistSort">
+
+<option value="default">
+
+Default
+
+</option>
+
+<option value="title">
+
+Title A-Z
+
+</option>
+
+<option value="score">
+
+Highest Rated
+
+</option>
+
+</select>
+
+<div
+
+id="watchlistContainer"
+
+class="anime-grid">
+
+</div>
+
+</div>
+
+</main>
+
+<script src="js/storage.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/watchlist.js"></script>
+
+</body>
+
+</html>

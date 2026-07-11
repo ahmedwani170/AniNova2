@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniNova - Discover. Watch. Track.</title>
+<meta name="description" content="AniNova - Discover, Watch and Track Anime">
+
+<meta name="theme-color" content="#7C3AED">
+
+<meta property="og:title" content="AniNova">
+
+<meta property="og:description" content="Modern Anime Discovery Platform">
+
+<meta property="og:type" content="website">
+    <meta name="description" content="AniNova - Modern Anime Streaming & Discovery Platform">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- ================= Loader ================= -->
+
+<div id="loader">
+    <div class="spinner"></div>
+    <h2>Ani<span>Nova</span></h2>
+</div>
+
+<!-- ================= Header ================= -->
+
+<header class="header">
+
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            Ani<span>Nova</span>
+        </a>
+
+        <nav class="nav">
+
+            <a href="index.html" class="active">Home</a>
+
+            <a href="search.html">Discover</a>
+
+            <a href="favorites.html">Favorites</a>
+
+            <a href="watchlist.html">Watchlist</a>
+
+            <a href="profile.html">Profile</a>
+
+        </nav>
+
+        <div class="search-container">
+
+            <i class="fas fa-search"></i>
+
+            <input
+    id="searchInput"
+    type="text"
+    placeholder="Search anime...">
+
+<button id="searchBtn">
+    <i class="fas fa-search"></i>
+</button>
+
+        </div>
+
+        <div class="header-buttons">
+
+            <button id="themeBtn">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <button id="randomBtn">
+                <i class="fas fa-dice"></i>
+            </button>
+
+            <button id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ================= Mobile Menu ================= -->
+
+<div id="mobileMenu">
+
+    <button id="closeMenu">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <a href="index.html">Home</a>
+
+    <a href="search.html">Discover</a>
+
+    <a href="favorites.html">Favorites</a>
+
+    <a href="watchlist.html">Watchlist</a>
+
+    <a href="profile.html">Profile</a>
+
+</div>
+
+<!-- ================= Hero ================= -->
+
+<section id="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            Featured Anime
+        </span>
+
+        <h1 id="heroTitle">
+            Loading...
+        </h1>
+
+        <p id="heroDescription">
+            Loading featured anime...
+        </p>
+
+        <div class="hero-buttons">
+
+            <button id="watchNowBtn">
+
+                <i class="fas fa-play"></i>
+
+                Watch Now
+
+            </button>
+
+            <button id="detailsBtn">
+
+                <i class="fas fa-circle-info"></i>
+
+                Details
+
+            </button>
+
+        </div>
+
+    </div>
+    <div class="hero-navigation">
+
+    <button id="heroPrev" class="hero-nav-btn">
+
+        <i class="fas fa-chevron-left"></i>
+
+    </button>
+
+    <button id="heroNext" class="hero-nav-btn">
+
+        <i class="fas fa-chevron-right"></i>
+
+    </button>
+
+</div>
+
+<div id="heroDots" class="hero-dots"></div>
+
+</section>
+
+<main>
+        <!-- ===========================
+         FEATURED SECTION
+    ============================ -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+                🔥 Trending Now
+            </h2>
+
+            <a href="search.html?category=trending" class="view-all">
+
+                View All
+
+                <i class="fas fa-chevron-right"></i>
+
+            </a>
+
+        </div>
+
+        <div
+            id="trendingContainer"
+            class="anime-row">
+
+            <!-- JS -->
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         AIRING
+    ============================ -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+
+                📺 Airing Today
+
+            </h2>
+
+            <a
+                href="search.html?category=airing"
+                class="view-all">
+
+                View All
+
+                <i class="fas fa-chevron-right"></i>
+
+            </a>
+
+        </div>
+
+        <div
+            id="airingContainer"
+            class="anime-row">
+
+        </div>
+        <div class="row-wrapper">
+
+    <button class="row-arrow left">
+
+        <i class="fas fa-chevron-left"></i>
+
+    </button>
+
+    <div id="airingContainer" class="anime-row"></div>
+
+    <button class="row-arrow right">
+
+        <i class="fas fa-chevron-right"></i>
+
+    </button>
+
+</div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         TOP RATED
+    ============================ -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+
+                ⭐ Top Rated
+
+            </h2>
+
+            <a
+                href="search.html?category=top"
+                class="view-all">
+
+                View All
+
+                <i class="fas fa-chevron-right"></i>
+
+            </a>
+
+        </div>
+
+        <div
+            id="topContainer"
+            class="anime-row">
+        </div>
+            <div class="row-wrapper">
+
+    <button class="row-arrow left">
+
+        <i class="fas fa-chevron-left"></i>
+
+    </button>
+
+    <div id="topContainer" class="anime-row"></div>
+
+    <button class="row-arrow right">
+
+        <i class="fas fa-chevron-right"></i>
+
+    </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         SEASONAL
+    ============================ -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+
+                🌸 Seasonal Anime
+
+            </h2>
+
+            <a
+                href="search.html?category=seasonal"
+                class="view-all">
+
+                View All
+
+                <i class="fas fa-chevron-right"></i>
+
+            </a>
+
+        </div>
+
+        <div
+            id="seasonContainer"
+            class="anime-row">
+
+        </div>
+        <div class="row-wrapper">
+
+    <button class="row-arrow left">
+
+        <i class="fas fa-chevron-left"></i>
+
+    </button>
+
+    <div id="seasonContainer" class="anime-row"></div>
+
+    <button class="row-arrow right">
+
+        <i class="fas fa-chevron-right"></i>
+
+    </button>
+
+</div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         CONTINUE WATCHING
+    ============================ -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+
+                ❤️ Continue Watching
+
+            </h2>
+
+        </div>
+
+        <div
+            id="continueContainer"
+            class="anime-row">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         RECENTLY VIEWED
+    ============================ -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+
+                🕒 Recently Viewed
+
+            </h2>
+
+        </div>
+
+        <div
+            id="recentContainer"
+            class="anime-row">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===========================
+         POPULAR GENRES
+    ============================ -->
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <h2>
+
+                🎭 Browse Genres
+
+            </h2>
+
+        </div>
+
+        <div class="genre-grid">
+
+            <button class="genre-btn" data-genre="1">Action</button>
+
+            <button class="genre-btn" data-genre="2">Adventure</button>
+
+            <button class="genre-btn" data-genre="4">Comedy</button>
+
+            <button class="genre-btn" data-genre="8">Drama</button>
+
+            <button class="genre-btn" data-genre="10">Fantasy</button>
+
+            <button class="genre-btn" data-genre="14">Horror</button>
+
+            <button class="genre-btn" data-genre="22">Romance</button>
+
+            <button class="genre-btn" data-genre="24">Sci-Fi</button>
+
+            <button class="genre-btn" data-genre="36">Slice of Life</button>
+
+            <button class="genre-btn" data-genre="37">Supernatural</button>
+
+        </div>
+
+    </section>
+        <!-- ===========================
+         PLATFORM STATS
+    ============================ -->
+
+    <section class="stats-section">
+
+        <div class="container">
+
+            <div class="stat-card">
+
+                <i class="fas fa-tv"></i>
+
+                <h2 id="totalAnime">0+</h2>
+
+                <p>Anime Available</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fas fa-users"></i>
+
+                <h2 id="totalUsers">10K+</h2>
+
+                <p>Community Members</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fas fa-heart"></i>
+
+                <h2 id="favoriteCount">0</h2>
+
+                <p>Your Favorites</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fas fa-star"></i>
+
+                <h2>24/7</h2>
+
+                <p>Anime Discovery</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===========================
+         NEWSLETTER
+    ============================ -->
+
+    <section class="newsletter">
+
+        <div class="container">
+
+            <h2>Never Miss New Anime</h2>
+
+            <p>Get updates about trending and seasonal anime.</p>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email">
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- ===========================
+     FOOTER
+=========================== -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h2 class="logo">
+
+                Ani<span>Nova</span>
+
+            </h2>
+
+            <p>
+
+                Discover. Watch. Track.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Explore</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="search.html">Discover</a>
+
+            <a href="favorites.html">Favorites</a>
+
+            <a href="watchlist.html">Watchlist</a>
+
+        </div>
+
+        <div>
+
+            <h3>Account</h3>
+
+            <a href="profile.html">Profile</a>
+
+            <a href="#">Settings</a>
+
+            <a href="#">Privacy</a>
+
+        </div>
+
+        <div>
+
+            <h3>Follow</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-github"></i></a>
+
+                <a href="#"><i class="fab fa-discord"></i></a>
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 AniNova. Built with ❤️ using the Jikan API.
+
+    </div>
+
+</footer>
+
+<!-- ===========================
+     TOAST
+=========================== -->
+
+<div id="toast"></div>
+
+<!-- ===========================
+     BACK TO TOP
+=========================== -->
+
+<button id="backToTop">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- ===========================
+     SCRIPT FILES
+=========================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/storage.js"></script>
+
+<script src="js/utils.js"></script>
+
+<script src="js/ui.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
