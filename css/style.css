@@ -2334,3 +2334,40 @@ body.light{
 }
 
 }
+/* ===============================
+   Mobile Search Bar
+================================ */
+
+#mobileSearchBar{
+
+    position:fixed;
+    top:70px;
+    left:0;
+    width:100%;
+    background:var(--surface);
+    padding:15px;
+    transform:translateY(-120%);
+    transition:.35s;
+    z-index:999;
+    box-shadow:var(--shadow);
+
+}
+
+#mobileSearchBar.active{
+
+    transform:translateY(0);
+
+}
+
+#mobileSearchBar input{
+
+    width:100%;
+    height:48px;
+    border:none;
+    outline:none;
+    border-radius:30px;
+    padding:0 18px;
+    background:var(--background);
+    color:white;
+
+}

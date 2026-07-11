@@ -648,3 +648,31 @@ function initializeSearch() {
     });
 
 }
+const mobileSearchBtn = document.getElementById("mobileSearchBtn");
+const mobileSearchBar = document.getElementById("mobileSearchBar");
+const mobileSearchInput = document.getElementById("mobileSearchInput");
+
+mobileSearchBtn?.addEventListener("click", () => {
+
+    mobileSearchBar.classList.toggle("active");
+
+    if (mobileSearchBar.classList.contains("active")) {
+        mobileSearchInput.focus();
+    }
+
+});
+mobileSearchInput?.addEventListener("keydown", (e) => {
+
+    if (e.key === "Enter") {
+
+        const q = mobileSearchInput.value.trim();
+
+        if (q) {
+
+            location.href = `search.html?q=${encodeURIComponent(q)}`;
+
+        }
+
+    }
+
+});
