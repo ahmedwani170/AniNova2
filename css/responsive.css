@@ -429,3 +429,49 @@
 }
 
 }
+/* ===============================
+   AniNova Mobile UI v2.2
+================================ */
+
+@media (max-width:768px){
+
+    .hero-content h1{
+        font-size:2.4rem;
+    }
+
+    #hero{
+        min-height:70vh;
+        padding:100px 20px 50px;
+    }
+
+    .anime-row{
+        gap:14px;
+    }
+
+    .anime-card{
+        min-width:160px;
+        max-width:160px;
+    }
+
+    .card-content{
+        padding:12px;
+    }
+
+    .card-title{
+        font-size:.9rem;
+    }
+
+    .watch-btn,
+    .favorite-btn{
+        height:36px;
+        font-size:.8rem;
+    }
+
+    .section{
+        padding:40px 0;
+    }
+
+    .section-header h2{
+        font-size:1.5rem;
+    }
+}
